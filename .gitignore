@@ -2,6 +2,8 @@ HELP.md
 .gradle
 build/
 data/
+src/main/resources/app.key
+src/main/resources/app.pub
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
