@@ -1,5 +1,6 @@
 package uk.ac.UserAuthService.controllers;
 
+import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,16 +14,11 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/user")
+@RequiredArgsConstructor
 public class UserController {
     private final UserService userService;
 
     private final ModelMapper mapper;
-
-    @Autowired
-    public UserController(UserService service, ModelMapper mapper){
-        this.userService = service;
-        this.mapper = mapper;
-    }
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)

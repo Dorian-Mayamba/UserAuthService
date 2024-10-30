@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: UserAuthService
+  data:
+    mongodb:
+      database: user-auth-service
+      port: 27017
+      host: localhost
+      username: dorian
+      password: dorian01
+      authentication-database: user-auth-service
+
+jwt:
+  private:
+    key: classpath:app.key
+  public:
+    key: classpath:app.pub
+logging:
+  level:
+    web: trace
+

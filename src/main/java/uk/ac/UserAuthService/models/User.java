@@ -8,7 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.UUID;
 
-@Document
+@Document(value = "users")
 @Getter
 @Setter
 @NoArgsConstructor
